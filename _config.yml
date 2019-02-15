@@ -6,6 +6,8 @@ description: Enterprise Cloud Enthusiast
 show_downloads: false
 google_analytics: UA-134527696-1
 
+permalink: /blog/:year/:month/:title/
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
