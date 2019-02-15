@@ -1,0 +1,18 @@
+
+{% if include.categories != empty %}
+<span>[
+  {% for category in include.categories %}
+    {% assign no_comma = forloop.last %}
+    {{ category }}{% unless no_comma %},{% endunless %}
+  {% endfor %}
+]</span>
+{% endif %}
+
+{% if include.tags != empty %}
+<span>[
+  {% for tag in include.tags %}
+    {% assign no_comma = forloop.last %}
+    <i>{{ tag }}</i>{% unless no_comma %},{% endunless %}
+  {% endfor %}
+]</span>
+{% endif %}

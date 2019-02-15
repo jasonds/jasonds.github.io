@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="date">
+    {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  <p>
+    {% if page.categories != empty or page.tags != empty %}
+    {% include category_tag_links.html categories=page.categories tags=page.tags %}
+    {% endif %}
+  </p>
+
+  <div class="addthis_inline_share_toolbox"></div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <p>Share this post!</p>
+  <div class="addthis_inline_share_toolbox"></div>
+
+  {% include disqus.html %}
+</article>
