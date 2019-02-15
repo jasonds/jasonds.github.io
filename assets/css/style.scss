@@ -4,3 +4,11 @@
 @import "{{ site.theme }}";
 
 @import "svg-icons";
+
+.posts {
+    article {
+        hr {
+            margin-top: 20px;
+        }
+    }
+}
