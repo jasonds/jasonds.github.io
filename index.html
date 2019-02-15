@@ -4,6 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+    {% assign no_hr = forloop.last %}
 
     <article class="post">
 
@@ -17,5 +18,10 @@ layout: default
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
+
+    {% unless no_hr %}
+    <hr />
+    {% endunless %}
+    
   {% endfor %}
 </div>
