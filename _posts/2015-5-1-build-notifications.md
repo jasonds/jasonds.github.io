@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build Notifications: May 1, 2015
+title: Build Notifications&#58; May 1, 2015
 categories: Microsoft
 tags:
   - Build
