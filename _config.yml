@@ -1,9 +1,9 @@
 theme: jekyll-theme-minimal
 
-title: Minimal theme
+title: JasonSears.io
 logo: https://avatars1.githubusercontent.com/u/4110188?s=400&v=4
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+description: Enterprise Cloud Enthusiast
+show_downloads: false
 google_analytics: UA-134527696-1
 
 # Includes an icon in the footer for each username you enter
@@ -25,3 +25,7 @@ footer-links:
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus: jasonsears
+
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
