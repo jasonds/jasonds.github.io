@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HtmlHelper Extensions to Knockout Web Applications
-categories: ASP.NET MVC
+categories: Web
 tags:
   - MVC
   - JavaScript
