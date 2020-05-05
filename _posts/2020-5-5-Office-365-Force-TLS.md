@@ -7,7 +7,7 @@ tags:
   - Security
 ---
 
-In order to enforce TLS through Office 365, to and from a particular domain, it is pretty straightforward to do it with connectors.
+In order to enforce TLS to secure e-mail connections in Office 365 to and from a particular domain, you can use connectors.
 
 By default, Exchange uses opportunistic TLS.
 
