@@ -8,7 +8,9 @@ tags:
   - react-data-grid
 ---
 
-Recently, I was looking into creating a custom column filter for a react-data-grid instance, which simply excluded characters from the input element. I found the header cell filters in react-data-grid-addons: <a href="https://github.com/adazzle/react-data-grid/tree/master/packages/react-data-grid-addons/src/cells/headerCells/filters">react-data-grid/packages/react-data-grid-addons/src/cells/headerCells/filters</a>. However, after inspecting the markup created by the default header cell filter, shown below, I noticed it didn't match any of the filters in react-data-grid-addons (NumericFilter, AutoCompleteFilter, MultiSelectFilter, SingleSelectFilter):
+Recently, I was looking into creating a custom column filter for a react-data-grid instance, which simply excluded characters from the input element.  
+
+There are <a href="https://github.com/adazzle/react-data-grid/tree/master/packages/react-data-grid-addons/src/cells/headerCells/filters">custom header filters in react-data-grid-addons</a>. However, after inspecting the markup created by the default header cell filter, shown below, I noticed it didn't match any of the filters in react-data-grid-addons (NumericFilter, AutoCompleteFilter, MultiSelectFilter, SingleSelectFilter):  
 
 ```bash
 <div>
@@ -24,9 +26,7 @@ After doing some digging, I found the <a href="https://adazzle.github.io/react-d
     + react-data-grid-examples a playground for the project, this is where you can check your changes for real.
 + There is also a common folder which contains common code between all packages.
 
-After looking into the common folder, I found the <a href="https://github.com/adazzle/react-data-grid/blob/master/packages/common/cells/headerCells/FilterableHeaderCell.js">default header cell filter</a>
-
-I created my custom column filter based off of this, with a higher-order component to take in the additional forbiddenCharacters array prop.
+After looking into the common folder, I found the <a href="https://github.com/adazzle/react-data-grid/blob/master/packages/common/cells/headerCells/FilterableHeaderCell.js">default header cell filter</a>. Based off of this, I created a custom column filter, with a higher-order component to take in an additional array prop to exclude characters from the input element: forbiddenCharacters.
 
 Here is the code for the new filter:
 ```bash
