@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure AI Foundry: Your Complete AI Factory for Delivering Next-Generation Applications and Agents
+title: Azure AI Foundry - Your Complete AI Factory for Delivering Next-Generation Applications and Agents
 categories: Azure
 tags:
   - Microsoft
